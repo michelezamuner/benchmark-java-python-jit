@@ -11,7 +11,7 @@ public class Test
     {
       if (i % MOD == 0) {
         double newcurrent = (System.currentTimeMillis() - (double)START) / 1000;
-        System.out.println(newcurrent - current);
+        if (args.length > 0) System.out.println(newcurrent - current);
         current = newcurrent;
       }
     }

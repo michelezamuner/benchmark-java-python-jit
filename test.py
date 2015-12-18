@@ -16,7 +16,8 @@ current = 0
 for i in range(0, TOT):
   if i % MOD == 0:
     newcurrent = (currentTimeMillis() - START) / 1000.0
-    lprintln(newcurrent - current)
+    if (len(sys.argv) > 1):
+        lprintln(newcurrent - current)
     current = newcurrent
 
 lprintln()
